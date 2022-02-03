@@ -1,0 +1,199 @@
+[
+    
+    
+            {
+                "year": "1930", 
+                "population": "20",
+                "category": "Greatest Generation" 
+            }, 
+            {
+                "year": "1932", 
+                "population": "22",
+                "category": "Greatest Generation" 
+            }, 
+            {
+                "year": "1934", 
+                "population": "24",
+                "category": "Greatest Generation" 
+            }, 
+            {
+                "year": "1936", 
+                "population": "24",
+                "category": "Greatest Generation" 
+            }, 
+            {
+                "year": "1938", 
+                "population": "20",
+                "category": "Greatest Generation" 
+            }, 
+            {
+                "year": "1940", 
+                "population": "26",
+                "category": "Greatest Generation" 
+            }, 
+            {
+                "year": "1942", 
+                "population": "28",
+                "category": "Greatest Generation" 
+            },
+            {
+                "year": "1944", 
+                "population": "30",
+                "category": "Baby Boomer" 
+            }, 
+            {
+                "year": "1946", 
+                "population": "32",
+                "category": "Baby Boomer" 
+            }, 
+            {
+                "year": "1948", 
+                "population": "34",
+                "category": "Baby Boomer" 
+            }, 
+            {
+                "year": "1950", 
+                "population": "34",
+                "category": "Baby Boomer" 
+            }, 
+            {
+                "year": "1952", 
+                "population": "30",
+                "category": "Baby Boomer" 
+            }, 
+            {
+                "year": "1954", 
+                "population": "36",
+                "category": "Baby Boomer" 
+            }, 
+            {
+                "year": "1956", 
+                "population": "38",
+                "category": "Baby Boomer" 
+            },
+            {
+                "year": "1960", 
+                "population": "38",
+                "category": "Baby Boomer" 
+            },
+            {
+                "year": "1962", 
+                "population": "38",
+                "category": "Baby Boomer" 
+            },
+            {
+                "year": "1964", 
+                "population": "38",
+                "category": "Baby Boomer" 
+            },
+            {
+                "year": "1966", 
+                "population": "30",
+                "category": "Generation X" 
+            }, 
+            {
+                "year": "1968", 
+                "population": "32",
+                "category": "Generation X" 
+            }, 
+            {
+                "year": "1970", 
+                "population": "34",
+                "category": "Generation X" 
+            }, 
+            {
+                "year": "1972", 
+                "population": "34",
+                "category": "Generation X" 
+            }, 
+            {
+                "year": "1974", 
+                "population": "30",
+                "category": "Generation X" 
+            }, 
+            {
+                "year": "1976", 
+                "population": "36",
+                "category": "Generation X" 
+            }, 
+            {
+                "year": "1978", 
+                "population": "36",
+                "category": "Generation X" 
+            }, 
+            {
+                "year": "1980", 
+                "population": "36",
+                "category": "Generation X" 
+            },
+            {
+                "year": "1982", 
+                "population": "36",
+                "category": "Generation X" 
+            },
+            {
+                "year": "1984", 
+                "population": "30",
+                "category": "Millenials"
+            }, 
+            {
+                "year": "1986", 
+                "population": "32",
+                "category": "Millenials"
+            }, 
+            {
+                "year": "1988", 
+                "population": "34",
+                "category": "Millenials"
+            }, 
+            {
+                "year": "1990", 
+                "population": "34",
+                "category": "Millenials"
+            }, 
+            {
+                "year": "1992", 
+                "population": "30",
+                "category": "Millenials"
+            }, 
+            {
+                "year": "1994", 
+                "population": "36",
+                "category": "Millenials"
+            }, 
+            {
+                "year": "1996", 
+                "population": "38",
+                "category": "Millenials"
+            }, 
+            {
+                "year": "1998", 
+                "population": "40",
+                "category": "Millenials"
+            },
+            {
+                "year": "2000", 
+                "population": "36",
+                "category": "Millenials"
+            },
+            {
+                "year": "2002", 
+                "population": "34",
+                "category": "Millenials"
+            },
+            {
+                "year": "2004", 
+                "population": "32",
+                "category": "Millenials"
+            },
+            {
+                "year": "2006", 
+                "population": "31",
+                "category": "Millenials"
+            },
+            {
+                "year": "2008", 
+                "population": "30",
+                "category": "Millenials"
+            }
+        ]

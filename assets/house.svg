@@ -1,0 +1,12 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" class="house-svg" viewBox="0 0 219.7 309.62" width="219.7"  height="309.62" >
+          <polyline class="house-svg-1" points="105.76 5.11 19.39 19.61 19.39 307.26 74.24 307.26 74.24 307.45 74.66 307.45 74.66 255.81 106.55 255.81" fill="#e89a41"></polyline>
+          <rect class="house-svg-2" width="105.76" height="309.62" fill="none"></rect>
+          <path class="house-svg-3" d="M40.48,88.41H15.8V63.73H40.48V88.41ZM79.82,63.73H55.14V88.41H79.82V63.73ZM40.48,102H15.8v24.68H40.48V102Zm39.34,0H55.14v24.68H79.82V102ZM40.48,140.37H15.8V165H40.48V140.37Zm39.34,0H55.14V165H79.82V140.37ZM40.48,178.69H15.8v24.68H40.48V178.69Zm39.34,0H55.14v24.68H79.82V178.69ZM40.48,217H15.8v24.68H40.48V217Zm39.34,0H55.14v24.68H79.82V217ZM40.48,255.33H15.8V280H40.48V255.33Z" transform="translate(18.5 1)" fill="#FFFFFF"></path>
+          <circle class="house-svg-4" cx="115.21" cy="282.8" r="3.83" fill="#cb673d"></circle>
+          <circle class="house-svg-1" cx="100.14" cy="282.8" r="3.83" fill="#e89a41"></circle>
+          <polygon class="house-svg-4" points="108.32 113.94 219.7 182.91 219.7 188.02 107.81 117.51 108.32 113.94" fill="#cb673d"></polygon>
+          <polygon class="house-svg-4" points="108.31 120.07 108.31 256.52 139.16 256.52 139.16 308.6 199.77 308.6 199.77 177.29 108.31 120.07" fill="#cb673d"></polygon>
+          <rect class="house-svg-3" x="154.88" y="218.01" width="24.68" height="24.68" fill="#FFFFFF"></rect>
+          <rect class="house-svg-3" x="115.03" y="218.01" width="24.68" height="24.68" fill="#FFFFFF"></rect>
+          <rect class="house-svg-3" x="154.88" y="256.33" width="24.68" height="24.68" fill="#FFFFFF"></rect>
+        </svg>
