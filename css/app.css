@@ -1,9 +1,10 @@
 :root {
   --color-primary: #e89a41;
   --color-secondary: #cb673d;
-  --color-Tertiary: #99273a;
-  --color-Quaternary: #54354a;
+  --color-tertiary: #99273a;
+  --color-quaternary: #54354a;
   --bg-primary: #f0f2f1;
+  --color-dark: #999;
   --box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
 }
 
@@ -24,8 +25,8 @@ body {
 #slide-container {
   display: flex;
   box-shadow: var(--box-shadow);
-  width: 1280px;
-  height: 720px;
+  width: 1024px;
+  height: 768px;
 }
 /* Left content of slide */
 #slide-container #slide-left {
@@ -77,4 +78,33 @@ body {
 #slide-container #slide-content {
   width: 75%;
   height: 100%;
+}
+
+/* Graph CSS */
+
+.stroke-dark {
+  stroke: var(--color-dark);
+}
+
+.fill-primary {
+  fill: var(--color-primary);
+}
+.fill-secondary {
+  fill: var(--color-secondary);
+}
+.fill-tertiary {
+  fill: var(--color-tertiary);
+}
+.fill-quaternary {
+  fill: var(--color-quaternary);
+}
+
+/* General Comp chart */
+.population-container .y-axis,
+.population-container .y-axis .tick {
+  display: none;
+}
+
+.population-container path {
+  transition: all ease 500ms;
 }
