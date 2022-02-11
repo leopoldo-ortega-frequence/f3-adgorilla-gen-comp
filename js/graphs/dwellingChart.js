@@ -1,3 +1,4 @@
+import { houseSVG } from "../paths.js";
 export class DwellingChart {
   constructor(_selector, _data, _width, _height) {
     this.selector = _selector;
@@ -36,14 +37,11 @@ export class DwellingChart {
 
     // house svg
     this.img = this.selector
-      .append("svg:image")
-      .attr("xlink:href", "./assets/house.svg")
-      .attr("width", 180)
-      .attr("height", 180)
-      .attr("x", this.width / 4)
-      .attr("y", 45);
+      .append("g")
+      .attr("transform", `scale(0.5) translate(${this.width / 1.3}, 120)`)
+      .html(houseSVG());
 
-    //this.updateData(this.data);
+    this.updateData(this.data);
   }
 
   updateData(newData) {

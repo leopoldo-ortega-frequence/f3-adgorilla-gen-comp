@@ -25,7 +25,7 @@ export class GenChart {
       .range(["primary", "secondary", "tertiary", "quaternary"]);
 
     this.xScale = d3
-      .scaleTime()
+      .scaleLinear()
       .domain(d3.extent(this.data, this.xValue))
       .range([0, this.width]);
     this.yScale = d3.scaleLinear().domain([0, 100]).range([this.height, 0]);
@@ -35,12 +35,20 @@ export class GenChart {
       .attr("class", "population-container")
       .attr("transform", "translate(25,0)");
 
-    this.xAxis = d3.axisBottom(this.xScale).ticks(6).tickPadding(15);
+    this.xAxis = d3
+      .axisBottom(this.xScale)
+      .ticks()
+      .tickPadding(15)
+      .tickFormat((d, i) => {
+        return d;
+      });
+    //.tickFormat(d3.timeFormat("%Y"));
 
     this.yAxis = d3.axisLeft(this.yScale).tickPadding(10);
 
     this.xAxisG = this.graphG
       .append("g")
+      .attr("class", "x-axis-G")
       .call(this.xAxis)
       .attr("transform", `translate(0,${this.height - 15})`)
       .select(".domain")
@@ -92,6 +100,7 @@ export class GenChart {
       }
     }
     //this.updateVis(newData);
+
     this.updateVis(this.formattedData);
   }
 
