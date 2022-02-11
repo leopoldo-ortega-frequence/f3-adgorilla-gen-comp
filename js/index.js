@@ -1,5 +1,5 @@
 // data imports
-import { DeviceData, generatePopData } from "./data.js";
+import { DeviceData, generatePopData, colors } from "./data.js";
 
 // graphs imports
 
@@ -12,6 +12,91 @@ let deviceData;
 let dwellingData;
 let populationData;
 
+/////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////
+// handle color tool here
+const colorTool = document.querySelector("#color-tool");
+const colorList = document.querySelector("#color-list");
+
+// populate the list with the colors
+const ul = document.createElement("ul");
+// create custom color picker
+const li = document.createElement("li");
+const option1 = document.createElement("input");
+option1.type = "color";
+option1.classList.add("primary-picker");
+const option2 = document.createElement("input");
+option2.type = "color";
+option2.classList.add("secondary-picker");
+li.appendChild(option1);
+li.appendChild(option2);
+ul.appendChild(li);
+colors.forEach((d, i) => {
+  const li = document.createElement("li");
+  li.classList.add("color-option");
+  const button1 = document.createElement("button");
+  button1.classList.add("color-box");
+  button1.style.backgroundColor = d.primary;
+  button1.value = i;
+  const button2 = document.createElement("button");
+  button2.classList.add("color-box");
+  button2.style.backgroundColor = d.secondary;
+  button2.value = i;
+  const button3 = document.createElement("button");
+  button3.classList.add("color-box");
+  button3.style.backgroundColor = d.tertiary;
+  button3.value = i;
+  const button4 = document.createElement("button");
+  button4.classList.add("color-box");
+  button4.style.backgroundColor = d.quaternary;
+  button4.value = i;
+  li.appendChild(button1);
+  li.appendChild(button2);
+  li.appendChild(button3);
+  li.appendChild(button4);
+  ul.appendChild(li);
+});
+colorList.appendChild(ul);
+colorTool.addEventListener("click", (e) => {
+  colorList.classList.toggle("active");
+});
+colorList.addEventListener("click", (e) => {
+  if (e.target.classList.contains("color-box")) {
+    const newColors = colors[e.target.value];
+    console.log(newColors);
+    document.documentElement.style.setProperty(
+      "--color-primary",
+      `${newColors.primary}`
+    );
+    document.documentElement.style.setProperty(
+      "--color-secondary",
+      `${newColors.secondary}`
+    );
+    document.documentElement.style.setProperty(
+      "--color-tertiary",
+      `${newColors.tertiary}`
+    );
+    document.documentElement.style.setProperty(
+      "--color-quaternary",
+      `${newColors.quaternary}`
+    );
+  }
+});
+/* --color-primary: #e89a41;
+  --color-secondary: #cb673d;
+  --color-Tertiary: #99273a;
+  --color-Quaternary: */
+
+document.querySelector(".primary-picker").addEventListener("input", (e) => {
+  const color = e.target.value;
+  document.documentElement.style.setProperty("--primary", `${color}`);
+});
+document.querySelector(".secondary-picker").addEventListener("input", (e) => {
+  const color = e.target.value;
+  document.documentElement.style.setProperty("--secondary", `${color}`);
+});
+/////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////
 const MARGIN = { top: 30, right: 20, bottom: 30, left: 10 };
 const WIDTH = 768;
 const HEIGHT = 768;
@@ -95,7 +180,7 @@ setInterval(() => {
   deviceChart.updateData(deviceData);
   dwellingChart.updateData(dwellingData);
   genChart.updateData(populationData);
-}, 1000);
+}, 1600);
 
 // call data creation function
 // createData();

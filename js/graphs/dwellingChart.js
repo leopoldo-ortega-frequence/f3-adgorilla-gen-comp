@@ -32,7 +32,7 @@ export class DwellingChart {
       .attr("font-weight", "bold")
       .attr("text-anchor", "end")
       .attr("font-size", "1rem")
-      .attr("fill", "#e89a41");
+      .attr("class", "fill-primary");
 
     // house svg
     this.img = this.selector
