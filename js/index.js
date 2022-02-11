@@ -24,12 +24,24 @@ const ul = document.createElement("ul");
 const li = document.createElement("li");
 const option1 = document.createElement("input");
 option1.type = "color";
+option1.value = "#e89a41";
 option1.classList.add("primary-picker");
 const option2 = document.createElement("input");
 option2.type = "color";
+option2.value = "#cb673d";
 option2.classList.add("secondary-picker");
+const option3 = document.createElement("input");
+option3.type = "color";
+option3.value = "#99273a";
+option3.classList.add("tertiary-picker");
+const option4 = document.createElement("input");
+option4.type = "color";
+option4.value = "#54354a";
+option4.classList.add("quaternary-picker");
 li.appendChild(option1);
 li.appendChild(option2);
+li.appendChild(option3);
+li.appendChild(option4);
 ul.appendChild(li);
 colors.forEach((d, i) => {
   const li = document.createElement("li");
@@ -89,11 +101,19 @@ colorList.addEventListener("click", (e) => {
 
 document.querySelector(".primary-picker").addEventListener("input", (e) => {
   const color = e.target.value;
-  document.documentElement.style.setProperty("--primary", `${color}`);
+  document.documentElement.style.setProperty("--color-primary", `${color}`);
 });
 document.querySelector(".secondary-picker").addEventListener("input", (e) => {
   const color = e.target.value;
-  document.documentElement.style.setProperty("--secondary", `${color}`);
+  document.documentElement.style.setProperty("--color-secondary", `${color}`);
+});
+document.querySelector(".tertiary-picker").addEventListener("input", (e) => {
+  const color = e.target.value;
+  document.documentElement.style.setProperty("--color-tertiary", `${color}`);
+});
+document.querySelector(".quaternary-picker").addEventListener("input", (e) => {
+  const color = e.target.value;
+  document.documentElement.style.setProperty("--color-quaternary", `${color}`);
 });
 /////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////
