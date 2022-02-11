@@ -58,6 +58,15 @@ export class GenChart {
       .attr("class", "y-axis")
       .call(this.yAxis);
 
+    //title
+    this.selector
+      .append("text")
+      .attr("x", 20)
+      .attr("y", 10)
+      .attr("font-weight", "bold")
+      .attr("font-size", "1.6rem")
+      .text("General Composition");
+
     this.areaGenerator = d3
       .area()
       .x((d) => this.xScale(this.xValue(d)))
@@ -132,7 +141,7 @@ export class GenChart {
         let subtractYVal = midYIdx[Math.floor(midYIdx.length / 2)];
 
         return `translate(${this.xScale(this.breakpoints[i]) - subtractXVal}, ${
-          this.yScale(subtractYVal.value) - 150
+          this.yScale(subtractYVal.value) / 3
         })`;
       });
     this.rect = this.rectG
