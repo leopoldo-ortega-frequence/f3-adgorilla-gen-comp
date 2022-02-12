@@ -14,9 +14,10 @@ let populationData;
 
 /////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////
-// handle color tool here
+// handle color tool here + data generator
 const colorTool = document.querySelector("#color-tool");
 const colorList = document.querySelector("#color-list");
+const dataBtn = document.querySelector(".new-data");
 
 // populate the list with the colors
 const ul = document.createElement("ul");
@@ -186,23 +187,9 @@ const dwellingChart = new DwellingChart(
   300
 );
 
-// function drawGraphs() {
-//   // call the graphs here
-//   drawDeviceGraph(deviceG, {
-//     data: deviceData,
-//     width: innerWidth / 2,
-//     height: 300,
-//   });
-// }
-
-setInterval(() => {
+dataBtn.addEventListener("click", () => {
   createData();
   deviceChart.updateData(deviceData);
   dwellingChart.updateData(dwellingData);
   genChart.updateData(populationData);
-}, 1600);
-
-// call data creation function
-// createData();
-// // invoke the drawGrpah function
-// drawGraphs();
+});
